@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Cor de fundo escura */
+    color: white; /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Colocar o vídeo atrás do conteúdo */
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column; /* Alinhamento vertical */
+    align-items: center;
+}
+
+.adventure-title {
+    font-family: 'Silkscreen', cursive;
+    font-size: 4em;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8), 0 0 25px rgba(0, 255, 0, 0.7);
+    margin: 0;
+}
+
+.title-nomads {
+    color: #ffcc00; /* Amarelo para destaque */
+}
+
+.title-exploration {
+    color: #00ccff; /* Azul para destaque */
+}
+
+.links {
+    margin: 20px 0;
+}
+
+.links a {
+    color: #ffcc00; /* Cor dos links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #00ccff; /* Cor ao passar o mouse */
+    text-decoration: underline;
+}
+
+.server-description {
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out; /* Animação de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff4757; /* Vermelho para chamar atenção */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.discord-button:hover {
+    background-color: #ff6b81; /* Cor mais clara no hover */
+}
+
+.discord-icon {
+    width: 20px; /* Tamanho do ícone do Discord */
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Altura automática para incluir todo o conteúdo */
+    text-align: center;
+}
+
+.intro {
+    background-color: rgba(0, 128, 0, 0.7); /* Verde com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Largura máxima da seção */
+    margin: 20px 0;
+}
+
+#loja {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.vip-container {
+    display: flex; /* Layout lado a lado */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vip {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo claro para seções de VIP */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1 1 30%; /* Tamanho flexível */
+    min-width: 250px; /* Largura mínima */
+}
+
+.vip h3 {
+    color: #ffcc00; /* Amarelo para destaque */
+}
+
+.price {
+    font-size: 1.5em;
+    color: #ff4757; /* Vermelho para valor */
+    font-weight: bold;
+}
+
+.discount {
+    color: #00ccff; /* Azul para desconto */
+    font-weight: bold;
+}
+
+.vip-description {
+    font-style: italic; /* Estilo itálico para descrição */
+    color: #ffffff; /* Cor branca */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(75, 0, 130, 0.8); /* Roxo escuro com transparência */
+}
+
+#creators {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo claro com transparência */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.creators-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.creator {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para os perfis */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    flex: 1 1 300px; /* Tamanho flexível */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animação ao passar o mouse */
+}
+
+.creator:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do perfil ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Sombra para destacar */
+}
+
+.creator-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Foto circular */
+    margin-bottom: 15px;
+}
+
+.age {
+    font-size: 1.2em;
+    color: #ffcc00; /* Amarelo para destaque */
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #00ccff; /* Azul para o título */
+    margin-bottom: 20px;
+}
